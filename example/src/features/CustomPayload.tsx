@@ -24,7 +24,17 @@ const CustomPayload = () => {
     boxSizing: 'border-box',
     '&::placeholder': {
       color: '#686868'
-    }
+    },
+    '@font-face': {
+      fontFamily: 'Doto',
+      fontStyle: 'normal',
+      fontWeight: 400,
+      src: 'url(https://fonts.gstatic.com/s/doto/v1/t5tJIRMbNJ6TQG7Il_EKPqP9zTnvqqGNcuvLMt1JIphFOOKuyE-VnLx5gssJ.woff) format("woff")'
+    },
+    fontFamily: 'Doto',
+    fontOpticalSizing: 'auto',
+    fontWeight: 400,
+    fontStyle: 'normal'
   };
 
   const [state] = useVGSCollectState();
@@ -127,7 +137,7 @@ const CustomPayload = () => {
             <TextField
               name='textField'
               validations={['required']}
-              css={VGSCollectFieldStyles}
+              style={VGSCollectFieldStyles}
             />
             {/**
              * VGS Collect text field component:
@@ -136,7 +146,7 @@ const CustomPayload = () => {
             <CardNumberField
               name='card-number'
               validations={['required']}
-              css={VGSCollectFieldStyles}
+              style={VGSCollectFieldStyles}
             />
             <input
               className='vgs-collect-native-input'

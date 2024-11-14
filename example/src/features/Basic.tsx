@@ -48,7 +48,16 @@ const Basic = React.memo(() => {
     boxSizing: 'border-box',
     '&::placeholder': {
       color: '#686868'
-    }
+    },
+    '@font-face': {
+      fontFamily: 'PT Mono',
+      fontStyle: 'normal',
+      fontWeight: '400',
+      fontDisplay: 'swap',
+      src: 'local("PT Mono"), local("PTMono-Regular") url(https://fonts.gstatic.com/s/ptmono/v7/9oRONYoBnWILk-9AnCszM_HxEcn7Hg.woff2) format("woff2")',
+      unicodeRange: 'U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116'
+    },
+    fontFamily: '"PT Mono", monospace'
   };
 
   useEffect(() => {
