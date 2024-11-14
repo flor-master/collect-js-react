@@ -96,6 +96,7 @@ interface IDefaultFieldOptions {
   name: string;
   validations?: string[];
   css?: Record<string, any>;
+  style?: Record<string, any>;
   successColor?: string;
   errorColor?: string;
   classes?: ClassMap;
@@ -108,7 +109,6 @@ interface IDefaultFieldOptions {
   readonly?: BooleanValue;
   inputMode?: InputMode;
   tokenization?: IFieldTokenization | boolean;
-  style?: Record<string, any>;
 }
 
 type FieldConfig =
